@@ -8,17 +8,29 @@
 {
     self = [super init];
 
+    #if (TARGET_OS_IPHONE || TARGET_OS_IPAD || TARGET_IPHONE_SIMULATOR) 
+    point = [NSValue valueWithCGPoint:CGPointMake(_x, _y)];
+    #else
     point = [NSValue valueWithPoint:NSMakePoint(_x, _y)];
+    #end
+    
     stroke = _id;
 
     return self;
 }
 
 
+#if (TARGET_OS_IPHONE || TARGET_OS_IPAD || TARGET_IPHONE_SIMULATOR)
+- (id) initWithPoint:(CGPoint)_point andStroke:(int)_id
+{
+    return [self initWithX:_point.x andY:_point.y andStroke:_id];
+}
+#else
 - (id) initWithPoint:(NSPoint)_point andStroke:(int)_id
 {
     return [self initWithX:_point.x andY:_point.y andStroke:_id];
 }
+#end
 
 
 - (id) initWithValue:(NSValue *)_value andStroke:(int)_id
@@ -34,25 +46,41 @@
 
 - (void) setX:(float)_x
 {
+    #if (TARGET_OS_IPHONE || TARGET_OS_IPAD || TARGET_IPHONE_SIMULATOR)
+    point = [NSValue valueWithCGPoint:CGPointMake(_x, [self getY])];
+    #else
     point = [NSValue valueWithPoint:NSMakePoint(_x, [self getY])];
+    #end
 }
 
 
 - (void) setY:(float)_y
 {
+    #if (TARGET_OS_IPHONE || TARGET_OS_IPAD || TARGET_IPHONE_SIMULATOR)
+    point = [NSValue valueWithCGPoint:CGPointMake([self getX], _y)];
+    #else
     point = [NSValue valueWithPoint:NSMakePoint([self getX], _y)];
+    #end
 }
 
 
 - (float) getX
 {
+    #if (TARGET_OS_IPHONE || TARGET_OS_IPAD || TARGET_IPHONE_SIMULATOR)
+    return [point CGPointValue].x;
+    #else
     return [point pointValue].x;
+    #end
 }
 
 
 - (float) getY
 {
+    #if (TARGET_OS_IPHONE || TARGET_OS_IPAD || TARGET_IPHONE_SIMULATOR)
+    return [point CGPointValue].y;
+    #else
     return [point pointValue].y;
+    #end
 }
 
 
