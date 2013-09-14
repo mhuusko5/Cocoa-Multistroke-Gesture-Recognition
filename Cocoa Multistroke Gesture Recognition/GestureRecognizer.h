@@ -7,7 +7,7 @@
 @interface GestureRecognizer : NSObject {
     NSMutableArray *loadedGestures;
 }
-@property (assign) NSMutableArray *loadedGestures;
+@property NSMutableArray *loadedGestures;
 
 - (GestureResult *) recognizeGestureWithStrokes:(NSMutableArray *)strokes;
 - (void) removeGestureWithName:(NSString *)name;

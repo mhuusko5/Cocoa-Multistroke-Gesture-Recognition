@@ -4,7 +4,7 @@
 @interface GestureStroke : NSObject <NSCopying, NSCoding> {
     NSMutableArray *points;
 }
-@property (assign) NSMutableArray *points;
+@property NSMutableArray *points;
 
 - (id) init;
 - (id) initWithPoints:(NSMutableArray *)_points;

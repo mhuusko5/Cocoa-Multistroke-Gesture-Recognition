@@ -12,7 +12,7 @@
     point = [NSValue valueWithCGPoint:CGPointMake(_x, _y)];
     #else
     point = [NSValue valueWithPoint:NSMakePoint(_x, _y)];
-    #end
+    #endif
     
     stroke = _id;
 
@@ -30,7 +30,7 @@
 {
     return [self initWithX:_point.x andY:_point.y andStroke:_id];
 }
-#end
+#endif
 
 
 - (id) initWithValue:(NSValue *)_value andStroke:(int)_id
@@ -50,7 +50,7 @@
     point = [NSValue valueWithCGPoint:CGPointMake(_x, [self getY])];
     #else
     point = [NSValue valueWithPoint:NSMakePoint(_x, [self getY])];
-    #end
+    #endif
 }
 
 
@@ -60,7 +60,7 @@
     point = [NSValue valueWithCGPoint:CGPointMake([self getX], _y)];
     #else
     point = [NSValue valueWithPoint:NSMakePoint([self getX], _y)];
-    #end
+    #endif
 }
 
 
@@ -70,7 +70,7 @@
     return [point CGPointValue].x;
     #else
     return [point pointValue].x;
-    #end
+    #endif
 }
 
 
@@ -80,7 +80,7 @@
     return [point CGPointValue].y;
     #else
     return [point pointValue].y;
-    #end
+    #endif
 }
 
 

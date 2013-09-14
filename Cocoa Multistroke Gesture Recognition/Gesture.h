@@ -7,9 +7,9 @@
     NSMutableArray *templates;
     NSString *name;
 }
-@property (assign) NSString *name;
-@property (assign) NSMutableArray *strokes;
-@property (assign) NSMutableArray *templates;
+@property NSString *name;
+@property NSMutableArray *strokes;
+@property NSMutableArray *templates;
 
 - (id) initWithName:(NSString *)_name andStrokes:(NSMutableArray *)_strokes;
 - (void) generateTemplates;

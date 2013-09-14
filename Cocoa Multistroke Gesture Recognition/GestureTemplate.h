@@ -7,9 +7,9 @@
     GestureStroke *originalStroke;
     GesturePoint *startUnitVector;
 }
-@property (assign) GestureStroke *stroke;
-@property (assign) GestureStroke *originalStroke;
-@property (assign) GesturePoint *startUnitVector;
+@property GestureStroke *stroke;
+@property GestureStroke *originalStroke;
+@property GesturePoint *startUnitVector;
 
 - (id) initWithPoints:(GestureStroke *)_points;
 - (void) encodeWithCoder:(NSCoder *)coder;

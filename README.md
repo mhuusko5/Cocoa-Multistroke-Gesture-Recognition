@@ -1,4 +1,4 @@
-Cocoa-Multistroke-Gesture-Recognition
+Cocoa Multistroke Gesture Recognition
 ===========================================
 A drop-in solution for matching multistroke input (gesture/drawing) against a gesture set. Designed for easy appending to/deleting from, and storing of this gesture set.
 

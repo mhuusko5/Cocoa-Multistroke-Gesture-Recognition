@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'Cocoa Multistroke Gesture Recognition' target in the 'Cocoa Multistroke Gesture Recognition' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif

@@ -4,7 +4,7 @@
     NSString *name;
     int score;
 }
-@property (assign) NSString *name;
-@property (assign) int score;
+@property NSString *name;
+@property int score;
 
 @end

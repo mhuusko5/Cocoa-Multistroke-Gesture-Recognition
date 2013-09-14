@@ -4,14 +4,14 @@
     NSValue *point;
     int stroke;
 }
-@property (assign) int stroke;
+@property int stroke;
 
 - (id) initWithX:(float)_x andY:(float)_y andStroke:(int)_id;
 #if (TARGET_OS_IPHONE || TARGET_OS_IPAD || TARGET_IPHONE_SIMULATOR) 
 - (id) initWithPoint:(CGPoint)_point andStroke:(int)_id;
 #else
 - (id) initWithPoint:(NSPoint)_point andStroke:(int)_id;
-#end
+#endif
 - (id) initWithValue:(NSValue *)_value andStroke:(int)_id;
 - (void) setX:(float)_x;
 - (void) setY:(float)_y;
