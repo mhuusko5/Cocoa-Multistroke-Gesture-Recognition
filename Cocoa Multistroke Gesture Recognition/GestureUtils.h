@@ -4,7 +4,7 @@
 
 #define boundingBoxSize 400
 
-#define GoldenRatio ( 0.5 * ( -1.0 + sqrt(5.0) ) )
+#define GoldenRatio (0.5 * (-1.0 + sqrt(5.0)))
 
 #define startVectorDelay 4
 #define startVectorLength 9

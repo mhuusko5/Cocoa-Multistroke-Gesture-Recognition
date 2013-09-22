@@ -248,7 +248,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = macosx10.7;
+				SDKROOT = macosx;
 			};
 			name = Debug;
 		};
@@ -274,7 +274,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
-				SDKROOT = macosx10.7;
+				SDKROOT = macosx;
 			};
 			name = Release;
 		};
@@ -286,6 +286,7 @@
 				GCC_PREFIX_HEADER = "Cocoa Multistroke Gesture Recognition/Cocoa Multistroke Gesture Recognition-Prefix.pch";
 				INFOPLIST_FILE = "Cocoa Multistroke Gesture Recognition/Cocoa Multistroke Gesture Recognition-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -298,6 +299,7 @@
 				GCC_PREFIX_HEADER = "Cocoa Multistroke Gesture Recognition/Cocoa Multistroke Gesture Recognition-Prefix.pch";
 				INFOPLIST_FILE = "Cocoa Multistroke Gesture Recognition/Cocoa Multistroke Gesture Recognition-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

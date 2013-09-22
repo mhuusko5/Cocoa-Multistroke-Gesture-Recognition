@@ -5,12 +5,12 @@
 #import "GestureResult.h"
 
 @interface GestureRecognizer : NSObject {
-    NSMutableArray *loadedGestures;
+	NSMutableArray *loadedGestures;
 }
 @property NSMutableArray *loadedGestures;
 
-- (GestureResult *) recognizeGestureWithStrokes:(NSMutableArray *)strokes;
-- (void) removeGestureWithName:(NSString *)name;
-- (void) addGesture:(Gesture *)gesture;
+- (GestureResult *)recognizeGestureWithStrokes:(NSMutableArray *)strokes;
+- (void)removeGestureWithName:(NSString *)name;
+- (void)addGesture:(Gesture *)gesture;
 
 @end

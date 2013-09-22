@@ -2,7 +2,7 @@
 
 @implementation AppDelegate
 
-- (void)applicationDidFinishLaunching:(NSNotification *)aNotification
-{}
+- (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
+}
 
 @end
