@@ -114,7 +114,7 @@ GestureStroke *Resample(GestureStroke *points) {
 		GesturePoint *point1 = [currentPoints pointAtIndex:(i - 1)];
 		GesturePoint *point2 = [currentPoints pointAtIndex:i];
 		float d = Distance(point1, point2);
-		if ((initialDistance + d) >= newPointDistance) {
+		if ((initialDistance + d) > newPointDistance) {
 			float x = [point1 getX] + ((newPointDistance - initialDistance) / d) * ([point2 getX] - [point1 getX]);
 			float y = [point1 getY] + ((newPointDistance - initialDistance) / d) * ([point2 getY] - [point1 getY]);
             
