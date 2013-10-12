@@ -4,7 +4,7 @@
    version = "1.0">
    <FileBreakpoints>
       <FileBreakpoint
-         shouldBeEnabled = "Yes"
+         shouldBeEnabled = "No"
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Cocoa Multistroke Gesture Recognition/Gesture.m"
@@ -13,7 +13,7 @@
          endingColumnNumber = "9223372036854775807"
          startingLineNumber = "5"
          endingLineNumber = "5"
-         landmarkName = "@synthesize name, strokes, templates;"
+         landmarkName = "@synthesize identity, strokes, templates;"
          landmarkType = "19">
       </FileBreakpoint>
    </FileBreakpoints>

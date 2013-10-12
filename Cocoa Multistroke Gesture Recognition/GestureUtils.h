@@ -13,11 +13,11 @@
 
 #define GUScaleLeniency 0.25f
 
-#define GUResampledStrokePointCount 120
+#define GUResampledStrokePointCount 160
 
 #define GUGoldenRatioAngleLeniency 30.0f
 
-#define GUStartAngleLeniency 30.0f
+#define GUStartAngleLeniency 40.0f
 
 #define GUGoldenRatioDegreeConstant 2.0f
 
